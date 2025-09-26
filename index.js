@@ -9,7 +9,7 @@
         alert("Enter the task");
 
       const newNode=document.createElement("li");
-      newNode.
+     
 
      
  }
