@@ -4,12 +4,14 @@
 
 
  function call() {
-    
-    if(!textValue.value)
+    const text=textValue.value;
+    if(!text)
         alert("Enter the task");
 
       const newNode=document.createElement("li");
-     
+      taskList.appendChild(newNode);
+       newNode.textContent=text;
+       textValue.value="";
 
      
  }
