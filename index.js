@@ -5,8 +5,11 @@
 
  function call() {
     const text=textValue.value;
-    if(!text)
-        alert("Enter the task");
+    if(!text){
+  return alert("Enter the task");
+  
+    }
+       
 
       const newNode=document.createElement("li");
       taskList.appendChild(newNode);
