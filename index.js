@@ -1,18 +1,30 @@
- const text=document.getElementById("text");
- const button=document.getElementById("AddTask");
- const tasklist=document.getElementById("tasklist");
+ const textValue=document.getElementById("textValue");
+ const AddTask=document.getElementById("AddTask");
+ const taskList=document.getElementById("taskList");
 
 
- button.addEventListener("click",() => {
-    const taskValue=text.value.trim();
-    if(!taskValue)
-        return alert("Enter the Task first");
+ function call() {
+    
+    if(!textValue.value)
+        alert("Enter the task");
 
-    const li=document.createElement("li");
-  li.textContent=taskValue;
+      const newNode=document.createElement("li");
+      newNode.
 
-  tasklist.append(li);
-  text.value="";
+     
+ }
+ 
+ AddTask.addEventListener("click",call);
+ textValue.addEventListener("keypress",(e)=>
+{
+    if(e.key==="Enter")
+    {
+        call();
+    }
+})
 
+function deleteTask() {
 
- });
+}
+
+//AddTask.addEventListener("click",deleteTask);
