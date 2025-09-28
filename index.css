@@ -1,33 +1,14 @@
-body {
-    background: #faffe6;
-    
-}
- 
- li{
- 
-  padding: 5px;
-   
-  /* display: flex;
+ /* index.css */
+.task-item {
+    width: 400px;
+  display: flex;
   justify-content: space-between;
-  align-items: center; */
+  align-items: center;
+  padding: 5px;
+  margin: 5px 0;
+  background: #f4f4f4; /* optional */
+}
 
- }
- 
- .main_div{
-background-color: rgb(196, 241, 255);
-display: flex;
-flex-direction:row;
-justify-items: start;
-}
- li button {
-  margin-left: 10px;      /* space between text and button */
-  padding: 3px 6px;
-  background-color: #000000;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-li button:hover {
-  background-color: #e04444;
+.task-item button {
+  margin-left: 10px;
 }
