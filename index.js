@@ -1,4 +1,4 @@
- const textValue=document.getElementById("textValue");
+  const textValue=document.getElementById("textValue");
  const AddTask=document.getElementById("AddTask");
  const taskList=document.getElementById("taskList");
 
@@ -12,10 +12,15 @@
        
 
       const newNode=document.createElement("li");
+      
       taskList.appendChild(newNode);
+   
        newNode.textContent=text;
+        
        textValue.value="";
-
+      const deleteButton=document.createElement("button");
+     newNode.appendChild(deleteButton);
+     deleteButton.textContent="delete";
      
  }
  
@@ -30,6 +35,8 @@
 
 function deleteTask() {
 
+    
+    
 }
 
 //AddTask.addEventListener("click",deleteTask);
